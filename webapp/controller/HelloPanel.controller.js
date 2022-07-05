@@ -9,6 +9,7 @@ sap.ui.define([
     return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
         
         onShowHello: function () {
+            //Test
             // read msg from i18n model
             var oBundle = this.getView().getModel("i18n").getResourceBundle();
             var sRecipient = this.getView().getModel().getProperty("/recipient/name");

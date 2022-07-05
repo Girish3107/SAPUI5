@@ -9,7 +9,7 @@ sap.ui.define([
 
         return Controller.extend("sap.btp.sapui5.controller.View1", {
             onInit: function () {
-
+                
             }
         });
     });
