@@ -4,6 +4,7 @@
     xmlns:mvc="sap.ui.core.mvc">
 
     <Page title="{i18n>homePageTitle}">
+    <!-- test6 -->
         <headerContent>
             <Button 
                 icon="sap-icon://hello-world"
