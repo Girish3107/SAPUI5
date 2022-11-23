@@ -27,6 +27,13 @@
             <FormattedText 
             htmlText="Hello {/recipient/name}" 
             class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+
+            	<Button type="Accept"
+						text="Accept"
+						press=".onGetProducts"
+						>
+					
+		</Button>
                               
         </content>
     </Panel>

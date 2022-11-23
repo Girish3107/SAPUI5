@@ -3,17 +3,20 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel",
     "../model/formatter",
     "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator"
-], function (Controller, JSONModel, formatter, Filter, FilterOperator) {
+    "sap/ui/model/FilterOperator",
+    "sap/ui/model/odata/v2/ODataModel"
+], function (Controller, JSONModel, formatter, Filter, FilterOperator,ODataModel) {
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
         formatter: formatter,
 		onInit : function () {
-			var oViewModel = new JSONModel({
-				currency: "EUR"
-			});
-			this.getView().setModel(oViewModel, "view");
+			// var oViewModel = new JSONModel({
+			// 	currency: "EUR"
+			// });
+            var oModel = new ODataModel("http://services.odata.org/Northwind/Northwind.svc/");
+            var oModel = new ODataModel({serviceUrl: "http://services.odata.org/Northwind/Northwind.svc"});
+			this.getView().setModel(oModel, "view");
 		},
 
     onFilterInvoices : function (oEvent){

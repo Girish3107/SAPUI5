@@ -10,5 +10,11 @@
 		<ObjectHeader
 			intro="{invoice>ShipperName}"
 			title="{invoice>ProductName}"/>
+       	<Button type="Accept"
+						text="Accept"
+						press="onPress"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+					
+		</Button>
 	</Page>
 </mvc:View>

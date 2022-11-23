@@ -27,6 +27,7 @@ sap.ui.define([
                 var oRouter = this.getOwnerComponent().getRouter();
 				oRouter.navTo("overview", {}, true);
             }
-        }
+        },
+        
 	});
 });

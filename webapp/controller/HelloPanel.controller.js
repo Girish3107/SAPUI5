@@ -40,6 +40,16 @@ sap.ui.define([
 
         onCloseDialog : function () {
             this.byId("helloDialog").close();
+        },
+
+        onGetProducts: function(){
+            debugger;
+            var oModel = this.getView().getModel("invoice");
+            oModel.read("/Products", {success: function(oData, oResponse){
+                console.log("success Handler");
+            }, error: function(oError){
+                console.log("Error handler");
+            }}); 
         }
     });
 });
